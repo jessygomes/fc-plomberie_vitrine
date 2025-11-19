@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -21,6 +22,7 @@ export default function NavbarMobile() {
 
   const links = [
     { href: "/", label: "Accueil" },
+    { href: "/a-propos", label: "À Propos" },
     { href: "/contactez-nous", label: "Contactez-nous" },
   ];
 
@@ -173,6 +175,31 @@ export default function NavbarMobile() {
                   })}
                 </div>
               </div>
+            </li>
+
+            <li>
+              <Link
+                href="/entreprise"
+                onClick={handleClose}
+                className={`relative flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group ${
+                  pathname === "/entreprise"
+                    ? "bg-linear-to-r from-primary-500/15 to-second-500/10 border border-primary-400/30 text-primary-600"
+                    : "hover:bg-primary-500/5 text-noir-500/80 hover:text-primary-600"
+                }`}
+              >
+                <div className="flex-1">
+                  <span className="text-lg font-medium font-one tracking-wide">
+                    L'Entreprise
+                  </span>
+                </div>
+                <div
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    pathname === "/entreprise"
+                      ? "bg-primary-500"
+                      : "bg-transparent group-hover:bg-primary-400/50"
+                  }`}
+                />
+              </Link>
             </li>
 
             {/* Contact */}

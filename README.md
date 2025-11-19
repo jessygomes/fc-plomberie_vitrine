@@ -154,11 +154,11 @@ Ce site web moderne a été développé avec **Next.js 16** et **TypeScript** po
 
 ## 🛠️ Technologies utilisées
 
-- **Framework** : Next.js 14 (React)
+- **Framework** : Next.js 16 (React)
 - **Langage** : TypeScript
 - **Styling** : Tailwind CSS
 - **Icônes** : React Icons (Font Awesome)
-- **Déploiement** : Vercel (recommandé)
+- **Déploiement** : Vercel
 
 ## 📈 Avantages pour votre business
 

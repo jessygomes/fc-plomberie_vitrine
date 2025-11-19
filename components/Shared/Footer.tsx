@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -41,6 +42,16 @@ export default function Footer() {
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
                     Accueil
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href="/entreprise"
+                    className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
+                  >
+                    <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
+                    L'Entreprise
                   </Link>
                 </li>
 

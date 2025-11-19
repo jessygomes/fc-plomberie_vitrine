@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,6 +13,7 @@ export default function NavbarDesktop() {
 
   const links = [
     { href: "/", label: "Accueil" },
+    { href: "/a-propos", label: "À Propos" },
     { href: "/contactez-nous", label: "Contactez-nous" },
   ];
 
@@ -109,6 +111,26 @@ export default function NavbarDesktop() {
                   })}
                 </div>
               </div>
+            </li>
+
+            <li>
+              <Link
+                href="/entreprise"
+                className={`relative font-one text-sm tracking-wide transition-all duration-300 group ${
+                  pathname === "/entreprise"
+                    ? "text-primary-500 font-semibold"
+                    : "text-noir-500 hover:text-primary-500"
+                }`}
+              >
+                L'Entreprise
+                <span
+                  className={`absolute top-5 left-0 h-0.5 bg-primary-500 transition-all duration-300 ${
+                    pathname === "/entreprise"
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
+                  }`}
+                />
+              </Link>
             </li>
 
             {/* Contact */}
