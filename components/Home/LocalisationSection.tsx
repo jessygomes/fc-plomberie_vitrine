@@ -6,13 +6,7 @@ export default function LocalisationSection() {
   const regions = [
     {
       title: "EN RÉGION CENTRE",
-      locations: [
-        "Loiret",
-        "Loire-et-Cher",
-        "L'Eure-et-Loir",
-        "L'Eure",
-        "Cher",
-      ],
+      locations: ["Loiret", "Loire-et-Cher", "L'Eure-et-Loir", "Cher", "Indre"],
       gradient: "from-primary-400 to-primary-500",
     },
     {
