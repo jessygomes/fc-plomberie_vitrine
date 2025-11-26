@@ -251,7 +251,9 @@ export default function AproposPage() {
               </div>
 
               <div className="mt-8">
-                <Btn href="/contactez-nous">NOUS CONTACTER</Btn>
+                <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                  NOUS CONTACTER
+                </Btn>
               </div>
             </div>
           </div>

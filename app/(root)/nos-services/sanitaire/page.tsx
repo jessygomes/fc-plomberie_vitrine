@@ -192,7 +192,9 @@ export default function ServiceSanitairePage() {
                 Installation WC, douche, baignoire et rénovation salle de bains
                 à Orléans, Blois, Paris...
               </p>
-              <Btn href="/contactez-nous">DEMANDEZ VOTRE DEVIS</Btn>
+              <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                DEMANDEZ VOTRE DEVIS
+              </Btn>
             </div>
           </div>
         </section>
@@ -376,7 +378,9 @@ export default function ServiceSanitairePage() {
                     </p>
                   </div>
 
-                  <Btn href="/contactez-nous">APPELER MAINTENANT</Btn>
+                  <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                    APPELER MAINTENANT
+                  </Btn>
                 </div>
               </div>
             </div>
@@ -441,7 +445,10 @@ export default function ServiceSanitairePage() {
               fuites, débouchage canalisations, installation chauffe-eau et
               dépannage d'urgence.
             </p>
-            <Btn href="/nos-services/plomberie">
+            <Btn
+              href="/nos-services/plomberie"
+              ariaLabel="Page des services de plomberie"
+            >
               VOIR NOS SERVICES PLOMBERIE
             </Btn>
           </div>

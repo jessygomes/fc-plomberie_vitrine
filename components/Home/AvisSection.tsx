@@ -129,6 +129,7 @@ export default function AvisSection() {
           <div className="flex justify-center items-center gap-4 mt-12">
             <button
               onClick={prevTestimonial}
+              aria-label="Afficher l'avis client précédent"
               className="p-3 bg-white border-2 border-primary-500 text-primary-500 rounded-full hover:bg-primary-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaChevronLeft size={20} />
@@ -140,6 +141,9 @@ export default function AvisSection() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
+                  aria-label={`Afficher l'avis client ${index + 1} sur ${
+                    testimonials.length
+                  }`}
                   className={`w-3 h-3 rounded-full transition-all duration-300 ${
                     index === currentIndex
                       ? "bg-primary-500 scale-125"
@@ -151,6 +155,7 @@ export default function AvisSection() {
 
             <button
               onClick={nextTestimonial}
+              aria-label="Afficher l'avis client suivant"
               className="p-3 bg-white border-2 border-primary-500 text-primary-500 rounded-full hover:bg-primary-500 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaChevronRight size={20} />

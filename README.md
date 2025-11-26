@@ -71,8 +71,8 @@ Ce site web moderne a été développé avec **Next.js 16** et **TypeScript** po
 
 ### Typographie
 
-- **Font One** : Titres et éléments importants
-- **Font Two** : Texte courant et descriptions
+- **Font Livvic** : Titres et éléments importants
+- **Font Jost** : Texte courant et descriptions
 
 ### Responsive Design
 

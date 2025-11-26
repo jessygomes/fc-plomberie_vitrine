@@ -104,6 +104,7 @@ export default function LocalisationSection() {
             </p>
             <a
               href="tel:0699024075"
+              aria-label="Appeler FC Plomberie au 06.99.02.40.75 pour vérifier si nous intervenons dans votre ville"
               className="inline-flex items-center gap-3 px-6 py-3 bg-linear-to-r from-primary-500 to-second-500 text-white font-two font-medium rounded-lg hover:from-primary-600 hover:to-second-600 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaMapMarkerAlt />

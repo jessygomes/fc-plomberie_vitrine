@@ -39,6 +39,7 @@ export default function NavbarDesktop() {
             height={120}
             className="mx-auto drop-shadow-2xl"
             priority
+            aria-label="Accéder à la page Accueil"
           />
           {/* <h1 className="font-one font-bold text-lg lg:text-xl text-noir-500 group-hover:text-primary-500 transition-colors duration-300">
             FC PLOMBERIE - CHAUFFAGE - SANITAIRE
@@ -51,6 +52,7 @@ export default function NavbarDesktop() {
             <li>
               <Link
                 href="/"
+                aria-label="Accéder à la page Accueil"
                 className={`relative font-one text-sm tracking-wide transition-all duration-300 group ${
                   pathname === "/"
                     ? "text-primary-500 font-semibold"
@@ -78,6 +80,7 @@ export default function NavbarDesktop() {
                     ? "text-primary-500 font-semibold"
                     : "text-noir-500 hover:text-primary-500"
                 }`}
+                aria-label="Afficher ou masquer les services"
               >
                 Nos Services
                 <FaChevronDown
@@ -108,6 +111,7 @@ export default function NavbarDesktop() {
                       <Link
                         key={index}
                         href={service.href}
+                        aria-label={`Accéder au service ${service.label}`}
                         className={`block px-4 py-3 font-one text-sm tracking-wide transition-all duration-300 hover:bg-primary-500/10 ${
                           isActive
                             ? "text-primary-500 font-semibold bg-primary-500/5"
@@ -125,6 +129,7 @@ export default function NavbarDesktop() {
             <li>
               <Link
                 href="/entreprise"
+                aria-label="Accéder à la page L'Entreprise"
                 className={`relative font-one text-sm tracking-wide transition-all duration-300 group ${
                   pathname === "/entreprise"
                     ? "text-primary-500 font-semibold"
@@ -146,6 +151,7 @@ export default function NavbarDesktop() {
             <li>
               <Link
                 href="/contactez-nous"
+                aria-label="Accéder à la page Contactez-nous"
                 className={`relative font-one text-sm tracking-wide transition-all duration-300 group ${
                   pathname === "/contactez-nous"
                     ? "text-primary-500 font-semibold"
@@ -167,6 +173,7 @@ export default function NavbarDesktop() {
           <div className="">
             <a
               href="tel:0699024075"
+              aria-label="Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous"
               className="inline-flex items-center gap-3 px-6 py-3 bg-linear-to-r from-primary-500 to-second-500 text-white font-two font-medium rounded-lg hover:from-primary-600 hover:to-second-600 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaPhone />

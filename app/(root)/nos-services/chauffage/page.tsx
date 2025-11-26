@@ -191,7 +191,9 @@ export default function ServiceChauffagePage() {
               <p className="font-two text-xl md:text-2xl mb-8 drop-shadow-lg text-shadow font-medium">
                 Installation chaudière, entretien et dépannage chauffage
               </p>
-              <Btn href="/contactez-nous">DEMANDEZ VOTRE DEVIS</Btn>
+              <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                DEMANDEZ VOTRE DEVIS
+              </Btn>
             </div>
           </div>
         </section>
@@ -375,7 +377,9 @@ export default function ServiceChauffagePage() {
                     </p>
                   </div>
 
-                  <Btn href="/contactez-nous">APPELER MAINTENANT</Btn>
+                  <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                    APPELER MAINTENANT
+                  </Btn>
                 </div>
               </div>
             </div>
@@ -444,7 +448,10 @@ export default function ServiceChauffagePage() {
               douches à l'italienne, rénovation salle de bains et aménagements
               complets.
             </p>
-            <Btn href="/nos-services/sanitaire">
+            <Btn
+              href="/nos-services/sanitaire"
+              ariaLabel="Page des services sanitaires"
+            >
               VOIR NOS SERVICES SANITAIRE
             </Btn>
           </div>

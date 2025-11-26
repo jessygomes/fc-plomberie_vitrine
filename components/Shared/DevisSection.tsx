@@ -17,7 +17,9 @@ export default function DevisSection() {
 
         {/* Call to action button */}
         <div className="flex justify-center">
-          <Btn href="/contactez-nous">DEMANDEZ VOTRE DEVIS</Btn>
+          <Btn href="/contactez-nous" ariaLabel="Page de contact">
+            DEMANDEZ VOTRE DEVIS
+          </Btn>
         </div>
 
         {/* Additional info */}

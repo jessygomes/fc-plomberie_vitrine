@@ -192,7 +192,9 @@ export default function ServicePlomberiePage() {
               <p className="font-two text-xl md:text-2xl mb-8 drop-shadow-lg text-shadow font-medium">
                 Installation, réparation et maintenance plomberie
               </p>
-              <Btn href="/contactez-nous">DEMANDEZ VOTRE DEVIS</Btn>
+              <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                DEMANDEZ VOTRE DEVIS
+              </Btn>
             </div>
           </div>
         </section>
@@ -371,7 +373,9 @@ export default function ServicePlomberiePage() {
                     </p>
                   </div>
 
-                  <Btn href="/contactez-nous">APPELER MAINTENANT</Btn>
+                  <Btn href="/contactez-nous" ariaLabel="Page de contact">
+                    APPELER MAINTENANT
+                  </Btn>
                 </div>
               </div>
             </div>
@@ -419,7 +423,10 @@ export default function ServicePlomberiePage() {
               Découvrez également nos services de chauffage : installation de
               chaudières, entretien annuel, dépannage d'urgence et plus encore.
             </p>
-            <Btn href="/nos-services/chauffage">
+            <Btn
+              href="/nos-services/chauffage"
+              ariaLabel="Page des services de chauffage"
+            >
               VOIR NOS SERVICES CHAUFFAGE
             </Btn>
           </div>

@@ -47,6 +47,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/"
+                    aria-label="Accéder à la page Accueil"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -57,6 +58,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/entreprise"
+                    aria-label="Accéder à la page L'Entreprise"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -67,6 +69,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contactez-nous"
+                    aria-label="Accéder à la page Contactez-nous"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -86,6 +89,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/nos-services/plomberie"
+                    aria-label="Accéder à la page Plomberie"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-second-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -95,6 +99,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/nos-services/chauffage"
+                    aria-label="Accéder à la page Chauffage"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-second-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -104,6 +109,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/nos-services/sanitaire"
+                    aria-label="Accéder à la page Sanitaire"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-second-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -123,6 +129,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="tel:0699024075"
+                    aria-label="Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous"
                     className="text-white/70 hover:text-primary-400 font-two transition-colors duration-300 flex items-center gap-3 group/contact"
                   >
                     <FaPhone className="text-primary-500 group-hover/contact:scale-110 transition-transform duration-300" />
@@ -132,6 +139,7 @@ export default function Footer() {
                 <li>
                   <a
                     href="mailto:fc.plomberie45@gmail.com"
+                    aria-label="Envoyer un email à FC Plomberie Chauffage Sanitaire à l'adresse fc.plomberie45@gmail.com"
                     className="text-white/70 hover:text-primary-400 font-two transition-colors duration-300 flex items-center gap-3 group/contact"
                   >
                     <FaEnvelope className="text-primary-500 group-hover/contact:scale-110 transition-transform duration-300" />
@@ -155,6 +163,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/mentions-legales"
+                    aria-label="Accéder à la page Mentions Légales"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -164,6 +173,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/politique-de-confidentialite"
+                    aria-label="Accéder à la page Politique de confidentialité"
                     className="text-white/70 hover:text-white font-two transition-colors duration-300 flex items-center gap-2 group/link"
                   >
                     <div className="w-1 h-1 bg-primary-500 rounded-full opacity-0 group-hover/link:opacity-100 transition-opacity duration-300"></div>
@@ -186,6 +196,7 @@ export default function Footer() {
                   Website by{" "}
                   <Link
                     href="https://www.inthegleam.com/"
+                    aria-label="Accéder au site web de inTheGleam"
                     className="hover:text-primary-400 transition-colors duration-300"
                     target="_blank"
                   >

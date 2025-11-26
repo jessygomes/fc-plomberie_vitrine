@@ -3,12 +3,14 @@ import Link from "next/link";
 interface BtnProps {
   children: React.ReactNode;
   href: string;
+  ariaLabel?: string;
 }
 
-export default function Btn({ children, href }: BtnProps) {
+export default function Btn({ children, href, ariaLabel }: BtnProps) {
   return (
     <Link
       href={href}
+      aria-label={ariaLabel || `${children} - Accéder à cette page`}
       className="group relative inline-block overflow-hidden px-8 py-4 rounded-md bg-linear-to-r from-noir-500 to-noir-700 shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-1 hover:scale-105 border border-noir-500/20"
     >
       {/* Effet de brillance animé */}

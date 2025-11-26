@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import {
   FaPhone,
   FaMapMarkerAlt,
-  FaClock,
   FaCheckCircle,
   FaEnvelope,
 } from "react-icons/fa";
@@ -39,6 +38,8 @@ export default function ContactezNousPage() {
       info: "06.99.02.40.75",
       description: "Disponible 24h/24, 7j/7 pour les urgences",
       link: "tel:0699024075",
+      ariaLabel:
+        "Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous",
     },
     {
       icon: <FaEnvelope size={40} />,
@@ -46,6 +47,8 @@ export default function ContactezNousPage() {
       info: "fc.plomberie45@gmail.com",
       description: "Réponse sous 24h, devis par email",
       link: "mailto:contact@fc-plomberie.com",
+      ariaLabel:
+        "Envoyer un email à FC Plomberie Chauffage Sanitaire à l'adresse fc.plomberie45@gmail.com",
     },
     {
       icon: <FaMapMarkerAlt size={40} />,
@@ -86,6 +89,7 @@ export default function ContactezNousPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <a
                 href="tel:0699024075"
+                aria-label="Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous"
                 className="inline-flex items-center gap-3 px-8 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white font-two font-medium text-lg rounded-lg hover:bg-white/30 transition-all duration-300 shadow-lg"
               >
                 <FaPhone />
@@ -123,6 +127,7 @@ export default function ContactezNousPage() {
                 {method.link ? (
                   <a
                     href={method.link}
+                    aria-label={method.ariaLabel}
                     className="font-two text-lg font-semibold text-primary-500 mb-3 block hover:text-primary-600 transition-colors"
                   >
                     {method.info}
@@ -153,6 +158,7 @@ export default function ContactezNousPage() {
             </p>
             <a
               href="tel:0699024075"
+              aria-label="Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous"
               className="inline-flex items-center gap-3 px-8 py-4 bg-linear-to-r from-primary-500 to-second-500 text-white font-two font-bold text-xl rounded-lg hover:from-primary-600 hover:to-second-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <FaPhone />

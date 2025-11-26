@@ -11,6 +11,7 @@ export default function ServicesSection() {
       backgroundImage: "/images/plomberie.jpg", // You'll need to add these images
       gradient: "from-primary-600/80 to-primary-800/90",
       link: "/nos-services/plomberie",
+      ariaLabel: "Page des services de plomberie",
     },
     {
       title: "CHAUFFAGE",
@@ -19,6 +20,7 @@ export default function ServicesSection() {
       backgroundImage: "/images/chauffage.jpg",
       gradient: "from-second-600/80 to-second-800/90",
       link: "/nos-services/chauffage",
+      ariaLabel: "Page des services de chauffage",
     },
     {
       title: "SANITAIRE",
@@ -27,6 +29,7 @@ export default function ServicesSection() {
       backgroundImage: "/images/sanitaire.jpg",
       gradient: "from-noir-600/80 to-noir-800/90",
       link: "/nos-services/sanitaire",
+      ariaLabel: "Page des services sanitaires",
     },
   ];
 
@@ -77,7 +80,9 @@ export default function ServicesSection() {
 
                 {/* Button */}
                 <div className="text-center">
-                  <Btn href={service.link}>EN SAVOIR PLUS</Btn>
+                  <Btn href={service.link} ariaLabel={service.ariaLabel}>
+                    EN SAVOIR PLUS
+                  </Btn>
                 </div>
               </div>
 

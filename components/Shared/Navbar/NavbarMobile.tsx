@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -53,10 +54,19 @@ export default function NavbarMobile() {
       {/* Fixed navbar header */}
       <nav className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200/20 shadow-sm md:hidden">
         <div className="flex items-center justify-between px-6 py-4">
-          <Link href="/" className="group">
-            <h1 className="font-one font-bold text-lg text-noir-500 group-hover:text-primary-500 transition-colors duration-300">
-              FC PLOMBERIE
-            </h1>
+          <Link
+            href="/"
+            className="group"
+            aria-label="Accéder à la page Accueil"
+          >
+            <Image
+              src="/logo/Logo_noir.png"
+              alt="FC Plomberie - Chauffage - Sanitaire"
+              width={50}
+              height={50}
+              className="mx-auto drop-shadow-2xl"
+              priority
+            />
           </Link>
 
           <button
@@ -82,9 +92,14 @@ export default function NavbarMobile() {
         {/* Header moderne */}
         <div className="flex items-center justify-between p-6 border-b border-primary-500/10 bg-linear-to-r from-primary-500/5 to-second-500/5">
           <div className="flex items-center gap-3">
-            <h2 className="text-sm font-bold font-one text-primary-600">
-              FC Plomberie - Chauffage - Sanitaire
-            </h2>
+            <Image
+              src="/logo/Logo_noir_inline.png"
+              alt="FC Plomberie - Chauffage - Sanitaire"
+              width={200}
+              height={120}
+              className="mx-auto drop-shadow-2xl"
+              priority
+            />
           </div>
           <button
             onClick={handleClose}
@@ -102,6 +117,7 @@ export default function NavbarMobile() {
               <Link
                 href="/"
                 onClick={handleClose}
+                aria-label="Accéder à la page Accueil"
                 className={`relative flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group ${
                   pathname === "/"
                     ? "bg-linear-to-r from-primary-500/15 to-second-500/10 border border-primary-400/30 text-primary-600"
@@ -127,6 +143,7 @@ export default function NavbarMobile() {
             <li>
               <button
                 onClick={() => setIsServicesExpanded(!isServicesExpanded)}
+                aria-label="Afficher ou masquer les services"
                 className={`relative flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group w-full ${
                   isServicesActive
                     ? "bg-linear-to-r from-primary-500/15 to-second-500/10 border border-primary-400/30 text-primary-600"
@@ -160,6 +177,7 @@ export default function NavbarMobile() {
                       <Link
                         key={index}
                         href={service.href}
+                        aria-label={`Accéder au service ${service.label}`}
                         onClick={handleClose}
                         className={`block p-3 rounded-lg transition-all duration-300 ${
                           isActive
@@ -181,6 +199,7 @@ export default function NavbarMobile() {
               <Link
                 href="/entreprise"
                 onClick={handleClose}
+                aria-label="Accéder à la page L'Entreprise"
                 className={`relative flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group ${
                   pathname === "/entreprise"
                     ? "bg-linear-to-r from-primary-500/15 to-second-500/10 border border-primary-400/30 text-primary-600"
@@ -207,6 +226,7 @@ export default function NavbarMobile() {
               <Link
                 href="/contactez-nous"
                 onClick={handleClose}
+                aria-label="Accéder à la page Contactez-nous"
                 className={`relative flex items-center gap-4 p-4 rounded-xl transition-all duration-300 group ${
                   pathname === "/contactez-nous"
                     ? "bg-linear-to-r from-primary-500/15 to-second-500/10 border border-primary-400/30 text-primary-600"
@@ -234,6 +254,7 @@ export default function NavbarMobile() {
         <div className="p-6">
           <a
             href="tel:0699024075"
+            aria-label="Appeler FC Plomberie Chauffage Sanitaire au 06.99.02.40.75 pour prendre rendez-vous"
             className="group relative overflow-hidden block text-white text-center font-two font-medium tracking-wider px-4 py-4 bg-linear-to-l from-second-500 to-primary-500 hover:from-second-600 hover:to-primary-600 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300"
           >
             <span className="relative z-10">06.99.02.40.75</span>
